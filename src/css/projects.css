@@ -38,7 +38,7 @@
 }
 
 
-@media (max-width:426px) {
+/* @media (max-width:426px) {
     .project {
         padding: var(--phone-padding);
     }
@@ -53,4 +53,22 @@
         width: auto;
         grid-template-columns: 1fr;
     }
+} */
+
+@media (max-width:426px) and (min-width:300px) {
+    .project {
+        padding: var(--phone-padding);
+    }
+    .project>h1::after {
+        font-size: 4rem;
+        top: 20%;
+        left: -10%;
+    }
+
+    .project>div {
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-columns: 70vw;
+        width: auto;
+    }
+    
 }

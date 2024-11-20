@@ -13,7 +13,7 @@ const Projects = () => {
     }, {
         name: "Pokemon Api Cards App",
         description: "An reactJS app using the pokemonapi. The project showcases my react's both single-page and multi-page app ability",
-        link: "https://pokeapicardsapp.netlify.app/"
+        link: "https://pokeapicardsapp.-netlify.app/"
     }, {
         name: "Portfolio",
         description: "Apart from this portfolio page, I have built another portfolio app which had opened my hands on exprience over reactJS",
@@ -21,7 +21,7 @@ const Projects = () => {
     }, {
         name: "Interactive Web Page",
         description: "An interactive web page which includes the techs HTML, CSS, JavaScript. However, this was an interview assignment which was failed due not submitting on time.",
-        link: "https://anukoolfs1.github.io/InterviewAssignment/"
+        link: "https://anukoolfs1.github.io/-InterviewAssignment/"
     }]
 
     return (
