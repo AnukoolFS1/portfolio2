@@ -6,12 +6,7 @@ const Footer = () => {
         <footer id='contact'>
             <div>
                 <h1>Connect with me on</h1>
-                {/* <ul>
-                    <li>Phone: <a href="tel:+919560095435">9560095435</a></li>
-                    <li>Mail:<a href="mailto:ascmailing0@gmail.com"> ascmailing0@gmail.com</a></li>
-                    <li>LinkedIn: <a href="">Anukool Singh Chauhan</a></li>
-                    <li>Github: <a href="">AnukoolFS1</a></li>
-                </ul> */}
+                
                 <table>
                     <tbody>
                         <tr>
