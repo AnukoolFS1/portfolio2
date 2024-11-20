@@ -1,0 +1,24 @@
+#skills{
+    padding: var(--page-padding);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+#skills h1{
+    position: relative;
+    z-index: 1;
+    width: 50vw;
+}
+
+#skills > h1::after{
+    content: "Skills";
+    font-size: 100px;
+    z-index: -1;
+    position: absolute;
+    top: 10%;
+    left: 1%;
+    color: rgba(128, 128, 128, 0.25);
+}

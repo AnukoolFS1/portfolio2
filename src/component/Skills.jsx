@@ -1,7 +1,9 @@
+import '../css/skill.css'
+
 const Skills = () => {
 
     return (
-        <section>
+        <section id='skills'>
             <h1>Skills</h1>
         </section>
     )
