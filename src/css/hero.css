@@ -1,0 +1,26 @@
+.hero{
+    /* border: 1px solid white; */
+    background-image:linear-gradient(to left, rgba(0, 0, 0, 0.377),rgba(0, 0, 0, 0.349)), url("../assets/1000001009.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding: var(--page-padding);
+
+    display: flex;
+    place-items: center;
+}
+
+.hero h1{
+    padding: 10px 0px 70px 10px;
+    text-shadow: 1px 1px 5px black;
+    position: relative;
+}
+
+.hero h1::after{
+    content: "A Web Developer";
+    white-space: pre;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+}

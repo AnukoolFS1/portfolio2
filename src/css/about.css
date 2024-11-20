@@ -1,0 +1,33 @@
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--page-padding);
+    /* background-color: black; */
+}
+
+.about article{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 50vw;
+    box-shadow: 1px 1px solid black;
+}
+.about article h1{
+    position: relative;
+    z-index: 1;
+}
+.about article > h1::after{
+    content: "About";
+    font-size: 100px;
+    z-index: -1;
+    position: absolute;
+    top: 10%;
+    left: 1%;
+    color: rgba(128, 128, 128, 0.25);
+}
+
+tr,td,th{
+    padding: 4px 10px;
+    text-align: left;
+}
