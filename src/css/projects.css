@@ -1,0 +1,38 @@
+.project{
+    padding: var(--page-padding);
+    background-color: #3a3a3a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.project h1{
+    position: relative;
+    z-index: 1;
+    width: 50vw;
+}
+
+.project > h1::after{
+    content: "Projects";
+    font-size: 100px;
+    z-index: -1;
+    position: absolute;
+    top: 10%;
+    left: 1%;
+    color: rgba(128, 128, 128, 0.25);
+}
+
+.project > div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    width: 50vw;
+}
+
+.project > div article{
+    padding: 4px 8px;
+    border: 1px solid grey;
+}

@@ -24,7 +24,7 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  --page-padding: 15px 10vw;
+  --page-padding: 2rem 10vw;
 }
 
 #root{
