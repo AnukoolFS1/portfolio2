@@ -14,7 +14,6 @@
 }
 .about article h1{
     position: relative;
-    text-align: center;
     z-index: 1;
 }
 .about article > h1::after{
@@ -32,7 +31,7 @@ tr,td,th{
     text-align: left;
 }
 
-@media (max-width:426px) {
+@media (max-width:426px){
     .about {
         padding: var(--phone-padding);
     }
