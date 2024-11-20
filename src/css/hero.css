@@ -26,3 +26,19 @@
     font-weight: 500;
     font-size: 3rem;
 }
+
+@media (max-width:426px) {
+    .hero h1{
+        font-size: 2rem;
+    }
+
+    .hero h1::after{
+        content: "A Web Developer";
+        white-space: pre;
+        position: absolute;
+        top: 40%;
+        left: 10px;
+        font-weight: 500;
+        font-size: 2.3rem;
+    }
+}

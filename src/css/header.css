@@ -55,7 +55,7 @@ header li a:hover{
     header{
         justify-content: center;
         font-size: 1rem;
-        padding: 0;
+        padding: 10px 0 14px;
     }
 
     header li a {
