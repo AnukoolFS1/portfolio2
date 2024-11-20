@@ -1,4 +1,27 @@
 footer{
+    padding: var(--page-padding);
     background-color: #3a3a3a;
-    height: 30vh;
+    display: flex;
+    justify-content: center;
+    /* height: 30vh; */
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer div h1{
+    position: relative;
+    z-index: 1;
+    width: 50vw;
+}
+
+footer div h1::after{
+    content: "Contact";
+    font-size: 100px;
+    z-index: -1;
+    position: absolute;
+    top: 10%;
+    left: 1%;
+    color: rgba(99, 99, 99, 0.25);
 }
