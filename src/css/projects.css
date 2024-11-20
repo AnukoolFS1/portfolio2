@@ -1,4 +1,4 @@
-.project{
+.project {
     padding: var(--page-padding);
     background-color: #3a3a3a;
     display: flex;
@@ -8,13 +8,13 @@
     gap: 2rem;
 }
 
-.project h1{
+.project h1 {
     position: relative;
     z-index: 1;
     width: 50vw;
 }
 
-.project > h1::after{
+.project>h1::after {
     content: "Projects";
     font-size: 100px;
     z-index: -1;
@@ -24,7 +24,7 @@
     color: rgba(128, 128, 128, 0.25);
 }
 
-.project > div{
+.project>div {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, 1fr);
@@ -32,7 +32,25 @@
     width: 50vw;
 }
 
-.project > div article{
+.project>div article {
     padding: 4px 8px;
     border: 1px solid grey;
+}
+
+
+@media (max-width:426px) {
+    .project {
+        padding: var(--phone-padding);
+    }
+
+    .project>h1::after {
+        font-size: 5rem;
+        top: 20%;
+        left: -10%;
+    }
+
+    .project>div {
+        width: auto;
+        grid-template-columns: 1fr;
+    }
 }

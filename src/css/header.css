@@ -49,3 +49,16 @@ header li a {
 header li a:hover{
     color:white
 }
+
+
+@media (min-width:424px) {
+    header{
+        justify-content: center;
+        font-size: 1rem;
+        padding: 0;
+    }
+
+    header li a {
+        padding: 4px 8px;
+    }
+}

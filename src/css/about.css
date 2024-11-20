@@ -14,6 +14,7 @@
 }
 .about article h1{
     position: relative;
+    text-align: center;
     z-index: 1;
 }
 .about article > h1::after{
@@ -29,4 +30,25 @@
 tr,td,th{
     padding: 4px 10px;
     text-align: left;
+}
+
+@media (max-width:426px) {
+    .about {
+        padding: var(--phone-padding);
+    }
+
+    .about article{
+        width: 70vw;
+    }
+
+    .about article>h1::after {
+        font-size: 5rem;
+        top: 20%;
+        left: 10%;
+    }
+
+    .project>div {
+        width: auto;
+        grid-template-columns: 1fr;
+    }
 }

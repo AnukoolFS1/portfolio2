@@ -26,6 +26,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   --page-padding: 8rem 10vw;
+  --phone-padding: 1rem 2rem;
 }
 
 #root{

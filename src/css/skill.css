@@ -49,3 +49,27 @@
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
     background-color: #213547;
 }
+
+
+@media (max-width:426px) {
+    #skills {
+        padding: var(--phone-padding);
+    }
+
+    #skills ul{
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    } 
+
+    #skills > article{
+        flex-direction: column;
+    }
+
+    #skills>h1::after {
+        font-size: 5rem;
+        top: 20%;
+        left: -10%;
+    }
+}
