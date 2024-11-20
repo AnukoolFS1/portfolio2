@@ -1,9 +1,10 @@
 .hero{
     /* border: 1px solid white; */
-    background-image:linear-gradient( rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.3)), url("../assets/1000001009.jpg");
-    background-repeat: no-repeat;
+    background-image:linear-gradient( black,rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.3)), url("../assets/1000001009.jpg");
+    /* background-repeat: no-repeat; */
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     height: 100vh;
     padding: var(--page-padding);
 
@@ -27,9 +28,14 @@
     font-size: 3rem;
 }
 
-@media (max-width:426px) {
+@media (max-width:426px)  and (min-width:300px)  {
+    .hero{
+        background-position: right;
+        background-position: -400px;
+    }
     .hero h1{
         font-size: 2rem;
+        white-space: pre;
     }
 
     .hero h1::after{
@@ -39,6 +45,6 @@
         top: 40%;
         left: 10px;
         font-weight: 500;
-        font-size: 2.3rem;
+        font-size: 2.1rem;
     }
 }
