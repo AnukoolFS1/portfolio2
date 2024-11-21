@@ -15,7 +15,7 @@ const Footer = () => {
                         </tr>
                         <tr>
                             <th>Mail:</th>
-                            <td><a href="tel:+919560095435">ascmailing0@gmail.com</a></td>
+                            <td><a href="mailto:ascmailing0@gmail.com">ascmailing0@gmail.com</a></td>
                         </tr>
                         <tr>
                             <th>LinkedIn:</th>
