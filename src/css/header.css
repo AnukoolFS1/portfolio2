@@ -6,7 +6,6 @@ header {
     padding-bottom: 10px;
     background-color: #00000020;
     border-bottom: 1px solid #80808080;
-    /* box-shadow: 1px 1px 15px black; */
     position: fixed;
     width: 100%;
     z-index: 3;
@@ -42,7 +41,6 @@ header li a {
     height: 100%;
     display: inline-block;
     font-size: 1rem;
-    /* border: 1px solid black; */
 }
 
 header li a:hover{
