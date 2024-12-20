@@ -3,6 +3,7 @@
     align-items: center;
     justify-content: center;
     padding: var(--page-padding);
+    background-color: #474E93;
 }
 
 .about article{
@@ -12,10 +13,16 @@
     width: 50vw;
     box-shadow: 1px 1px solid black;
 }
+
 .about article h1{
     position: relative;
     z-index: 1;
 }
+
+.about article p{
+    font-size: 1.3rem;
+}
+
 .about article > h1::after{
     content: "About";
     font-size: 100px;
@@ -29,9 +36,20 @@
 tr,td,th{
     padding: 4px 10px;
     text-align: left;
+    font-size: 1.25rem;
 }
 
-@media (max-width:426px)  and (min-width:300px) {
+@media (max-width:1024px) and (min-width:427px) {
+    .about{
+        padding: 10vw 0px;
+    }
+
+    .about article{
+        width: 80vw;
+    }
+}
+
+@media (max-width:426px)  and (min-width:250px) {
     .about {
         padding: var(--phone-padding);
     }
@@ -44,5 +62,15 @@ tr,td,th{
         font-size: 4rem;
         top: 20%;
         left: 10%;
+    }
+
+    .about article p{
+        font-size: 1rem;
+    }
+
+    tr,td,th{
+        padding: 4px 10px;
+        text-align: left;
+        font-size: 1rem;
     }
 }

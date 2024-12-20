@@ -1,8 +1,6 @@
-import { useState, useEffect } from "react"
 import '../css/about.css'
 
 const About = () => {
-    const [about, setAbout] = useState([])
     const aboutarr = []
     const aboutData = {
         "Name": "Anukool Singh Chauhan",
@@ -19,7 +17,6 @@ const About = () => {
 
     return (
         <section className="about" id="about">
-            {/* <div><img src="" alt="" /></div> */}
             <article>
                 <h1>About Me</h1>
                 <article>

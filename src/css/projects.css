@@ -1,6 +1,7 @@
 .project {
     padding: var(--page-padding);
-    background-color: #3a3a3a;
+    background-color: #213555;
+    color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -37,7 +38,21 @@
     border: 1px solid grey;
 }
 
-@media (max-width:426px) and (min-width:300px) {
+@media (max-width:768px)  and (min-width:427px)  {
+    .project>div {
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-columns: 80vw;
+        width: auto;
+    }
+
+    .project>h1::after {
+        font-size: 6rem;
+        top: 20%;
+        left: -30%;
+    }
+}
+
+@media (max-width:426px) and (min-width:250px) {
     .project {
         padding: var(--phone-padding);
         align-items: start;
@@ -48,11 +63,10 @@
         top: 20%;
         left: -8%;
     }
-
+    
     .project>div {
         grid-template-rows: repeat(5, 1fr);
         grid-template-columns: 80vw;
         width: auto;
     }
-    
 }

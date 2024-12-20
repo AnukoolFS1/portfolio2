@@ -15,8 +15,8 @@ const Header = () => {
     }
 
     const position = {
-        boxShadow: '1px 2px 10px #000000',
-        backgroundColor: '#00000090'
+        boxShadow: '1px 2px 10px #00000080',
+        backgroundColor: '#2e5077a3'
     }
 
     useEffect(() => {

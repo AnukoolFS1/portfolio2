@@ -1,46 +1,90 @@
-.hero{
-    background-image:linear-gradient( black,rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.3)), url("../assets/1000001009.jpg");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+.hero {
+    background-color: #213555;
     height: 100vh;
     padding: var(--page-padding);
     display: flex;
     place-items: center;
 }
 
-.hero h1{
-    padding: 10px 0px 70px 10px;
+.hero article {
+    /* width: 50%; */
+    flex: 2;
+}
+
+/* .hero div{
+    border: 1px solid black;
+} */
+
+.hero article h1 {
     text-shadow: 1px 1px 5px black;
-    position: relative;
 }
 
-.hero h1::after{
-    content: "A Web Developer";
-    white-space: pre;
-    position: absolute;
-    top: 50%;
-    left: 10px;
-    font-weight: 500;
-    font-size: 3rem;
+.hero article h2 {
+    font-size: 2.4rem;
 }
 
-@media (max-width:426px)  and (min-width:300px)  {
-    .hero{
-        background-position: right;
-        background-position: -400px;
+.hero div img {
+    width: 45vw;
+    clip-path: circle(50%);
+}
+
+@media (max-width:1024px) and (min-width:769px) {
+    .hero h1 {
+        font-size: 3rem;
+        white-space: pre;
     }
-    .hero h1{
+
+    .hero article h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width:768px) and (min-width:427px) {
+    .hero article {
+        margin-top: 12px;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+        white-space: pre;
+    }
+
+    .hero article h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        height: fit-content;
+    }
+
+    .hero div img {
+        width: 45vw;
+        clip-path: none;
+        width: 100%;
+        border-radius: 12px;
+    }
+}
+
+@media (max-width:426px) and (min-width:250px) {
+
+    .hero {
+        flex-direction: column-reverse;
+        height: fit-content;
+        padding: 15vh 0;
+    }
+    .hero div img {
+        width: 45vw;
+        clip-path: none;
+        width: 100%;
+    }
+    .hero h1 {
+        padding: 0px 1rem;
         font-size: 2rem;
         white-space: pre;
     }
-    .hero h1::after{
-        content: "A Web Developer";
-        white-space: pre;
-        position: absolute;
-        top: 40%;
-        left: 10px;
-        font-weight: 500;
-        font-size: 2.1rem;
+    .hero article h2 {
+        padding: 0px 1rem;
+        font-size: 1.5rem;
     }
 }

@@ -1,19 +1,20 @@
-#skills{
+#skills {
     padding: var(--page-padding);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    background-color: #474E93;
 }
 
-#skills > h1{
+#skills>h1 {
     position: relative;
     z-index: 1;
     width: 50vw;
 }
 
-#skills > h1::after{
+#skills>h1::after {
     content: "Skills";
     font-size: 100px;
     z-index: -1;
@@ -23,54 +24,94 @@
     color: rgba(128, 128, 128, 0.25);
 }
 
-#skills > article{
-    width: 50vw;
+#skills>article {
+    width: 52vw;
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
 }
 
-#skills > article div{
-    width: 24vw;
-}
-
-#skills ul{
+#skills ul {
     box-sizing: border-box;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 12vw 12vw;
     gap: 1rem;
-} 
+}
 
-#skills li{
+#skills li {
     list-style: none;
     border: 1px solid black;
-    padding: 1rem;
+    padding: 2rem;
     display: inline-block;
     border-radius: 2px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
     background-color: #213547;
+    font-size: 1.2rem;
+}
+
+#skills li span {
+    display: inline-block;
+    transform: translateY(7px);
+}
+
+@media (max-width:1024px) and (min-width:769px) {
+    #skills ul {
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: 30vw;
+        gap: 1rem;
+    }
+
+
+    #skills>article {
+        flex-direction: column;
+    }
 }
 
 
-@media (max-width:426px) and (min-width:300px)  {
+@media (max-width:768px) and (min-width:427px) {
+    #skills ul {
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: 50vw;
+        gap: 1rem;
+    }
+
+    #skills li {
+        font-size: 1.5rem;
+    }
+
+    #skills>article {
+        flex-direction: column;
+    }
+
+    #skills>h1::after {
+        top: 20%;
+        left: -20%;
+    }
+}
+
+
+
+@media (max-width:426px) and (min-width:250px) {
     #skills {
         padding: var(--phone-padding);
         align-items: start;
     }
 
-    #skills ul{
+    #skills ul {
         box-sizing: border-box;
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 50vw;
         gap: 1rem;
-    } 
+    }
 
-    #skills > article{
+    #skills>article {
         flex-direction: column;
     }
 
     #skills>h1::after {
         font-size: 4rem;
         top: 20%;
-        left: -10%;
+        left: -50%;
     }
 }
